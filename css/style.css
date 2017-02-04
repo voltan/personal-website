@@ -1,0 +1,63 @@
+body {
+    background: url('../image/bg.jpg') fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 20px;
+    padding: 0;
+    margin: 14px 0;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 0;
+    margin: 14px 0;
+}
+
+a {
+    color: #333;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, .7);
+    border: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 1px;
+    margin: 50px auto;
+    width: 720px;
+}
+
+.pi-header-title {
+    margin-top: 20px;
+}
+
+.pi-footer-body {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.pi-footer-contact {
+    padding: 15px 0;
+}
+
+.pi-footer-social {
+    padding: 15px 0;
+}
+
+.pi-footer-social a {
+    font-size: 25px;
+    padding: 0 5px;
+}
+
+.pi-footer-copyright {
+    text-align: center;
+}
+
+.list-group-item {
+    background-color: rgba(255, 255, 255, .7);
+    border: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 1px;
+}
