@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>{dev} حسین عزیزآبادی فراهانی - Hossein Azizabadi Farahani</title>
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link href="./css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
     <link href="./css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
     <link href="./css/locale.css" media="screen" rel="stylesheet" type="text/css">
@@ -21,10 +24,10 @@
 <body id="pi-system" class="pi-locale-fa">
 <div class="container clearfix">
     <header class="pi-header clearfix page-header">
-        <div class="col-xs-3">
+        <div class="col-md-3 col-xs-4">
             <img src="./image/avatar.png" alt="حسین عزیزآبادی فراهانی - Hossein Azizabadi Farahani" class="img-responsive img-circle">
         </div>
-        <div class="col-xs-9">
+        <div class="col-md-9 col-xs-8">
             <div class="pi-header-title clearfix">
                 <h1>حسین عزیزآبادی فراهانی</h1>
                 <h2>Hossein Azizabadi Farahani</h2>
@@ -39,16 +42,16 @@
         </ul>
         <h3>تخصص</h3>
         <ul class="list-group">
-            <li class="list-group-item col-xs-6">زبان برنامه نویسی PHP</li>
-            <li class="list-group-item col-xs-6">زبان برنامه نویسی Java</li>
-            <li class="list-group-item col-xs-6">فریم ورک Zend نسخه ۲</li>
-            <li class="list-group-item col-xs-6">توسعه نرم افزار های اندروید</li>
-            <li class="list-group-item col-xs-6">پایگاه داده های MySql و Sqlite</li>
-            <li class="list-group-item col-xs-6">Html 5 / Css 3 / Bootstrap / jQuery / AngolarJs</li>
-            <li class="list-group-item col-xs-6">کنترل نسخه Git و SVN</li>
-            <li class="list-group-item col-xs-6">لینوکس : سنت او اس - فدورا</li>
-            <li class="list-group-item col-xs-6">پیکربندی سرور وب لینوکس</li>
-            <li class="list-group-item col-xs-6">پیکربندی کنترل پنل داریکت سی پنل و داریکت ادمین</li>
+            <li class="list-group-item col-md-6 col-xs-12">زبان برنامه نویسی PHP</li>
+            <li class="list-group-item col-md-6 col-xs-12">زبان برنامه نویسی Java</li>
+            <li class="list-group-item col-md-6 col-xs-12">فریم ورک Zend نسخه ۲</li>
+            <li class="list-group-item col-md-6 col-xs-12">توسعه نرم افزار های اندروید</li>
+            <li class="list-group-item col-md-6 col-xs-12">پایگاه داده های MySql و Sqlite</li>
+            <li class="list-group-item col-md-6 col-xs-12">Html 5 / Css 3 / Bootstrap / jQuery / AngolarJs</li>
+            <li class="list-group-item col-md-6 col-xs-12">کنترل نسخه Git و SVN</li>
+            <li class="list-group-item col-md-6 col-xs-12">لینوکس : سنت او اس - فدورا</li>
+            <li class="list-group-item col-md-6 col-xs-12">پیکربندی سرور وب لینوکس</li>
+            <li class="list-group-item col-md-6 col-xs-12">پیکربندی کنترل پنل داریکت سی پنل و داریکت ادمین</li>
         </ul>
     </section>
     <footer class="pi-footer">
