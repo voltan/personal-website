@@ -11,15 +11,6 @@
     <link href="./css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
     <link href="./css/locale.css" media="screen" rel="stylesheet" type="text/css">
     <link href="./css/style.css" media="screen" rel="stylesheet" type="text/css">
-
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-91384236-1', 'auto');
-        ga('send', 'pageview');
-    </script>
 </head>
 <body id="pi-system" class="pi-locale-fa">
 <div class="container clearfix">
@@ -69,5 +60,66 @@
         <div class="pi-footer-copyright">۱۳۸۵ تا ۱۳۹۵</div>
     </footer>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-91384236-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script>
+    (function() {
+
+        var win = $(window);
+
+        win.resize(function() {
+
+            var win_w = win.width(),
+                win_h = win.height(),
+                $bg    = $("#bg");
+
+            // Load narrowest background image based on
+            // viewport width, but never load anything narrower
+            // that what's already loaded if anything.
+            var available = [
+                1024, 1280, 1366,
+                1400, 1680, 1920,
+                2560, 3840, 4860
+            ];
+
+            var current = $bg.attr('src').match(/([0-9]+)/) ? RegExp.$1 : null;
+
+            if (!current || ((current < win_w) && (current < available[available.length - 1]))) {
+
+                var chosen = available[available.length - 1];
+
+                for (var i=0; i<available.length; i++) {
+                    if (available[i] >= win_w) {
+                        chosen = available[i];
+                        break;
+                    }
+                }
+
+                // Set the new image
+                $bg.attr('src', '/img/bg/' + chosen + '.jpg');
+
+                // for testing...
+                // console.log('Chosen background: ' + chosen);
+
+            }
+
+            // Determine whether width or height should be 100%
+            if ((win_w / win_h) < ($bg.width() / $bg.height())) {
+                $bg.css({height: '100%', width: 'auto'});
+            } else {
+                $bg.css({width: '100%', height: 'auto'});
+            }
+
+        }).resize();
+
+    })(jQuery);
+</script>
 </body>
 </html>
