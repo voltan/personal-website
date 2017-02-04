@@ -66,16 +66,7 @@
                 </div>
             </div>
         </div>
-        <div class="pi-footer-copyright">۱۳۸۵ تا <?php
-            $dateFormater = new IntlDateFormatter(
-                'fa_IR',
-                IntlDateFormatter::FULL,
-                IntlDateFormatter::FULL,
-                'Asia/Tehran',
-                IntlDateFormatter::TRADITIONAL,
-                'yyyy'
-            );
-            echo $dateFormater->format(time());  ?></div>
+        <div class="pi-footer-copyright">۱۳۸۵ تا ۱۳۹۵</div>
     </footer>
 </div>
 </body>
